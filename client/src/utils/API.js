@@ -16,5 +16,10 @@ export default {
   // Saves an article to the database
   saveArticle: function(articleData) {
     return axios.post("/api/articles", articleData);
+  },
+  scrapeArticles: function (articleParams) {
+    return axios.get("/api/scrape/NYT", {
+      params: articleParams
+    });
   }
 };

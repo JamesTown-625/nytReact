@@ -5,8 +5,9 @@ import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 
-const App = () =>
-  <Router>
+const App = () => {
+
+  return <Router>
     <div>
       <Nav />
       <Switch>
@@ -17,5 +18,6 @@ const App = () =>
       </Switch>
     </div>
   </Router>;
+}
 
 export default App;
